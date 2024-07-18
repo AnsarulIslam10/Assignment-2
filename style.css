@@ -43,6 +43,10 @@ body {
 header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.089) 100%);
 }
+main {
+    width: 85%;
+    margin: 0 auto;
+}
 
 /* Navbar Styles */
 .navbar {
@@ -190,9 +194,50 @@ header {
     margin-bottom: 8px;
 }
 
+/* Habit section */
 
+.habit-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 58px;
+    margin-top: 100px;
+}
 
+.habit-title h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
 
+.habit-cards {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.habit-card {
+    width: 231px;
+    height: 274px;
+    text-align: center;
+}
+
+.habit-card img {
+    border-radius: 50%;
+}
+
+.habit-card h3 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.habit-card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
 /* Mobile Responsive Code */
@@ -232,21 +277,33 @@ header {
         width: 155.74px;
         height: 72.58px;
     }
-    .overlay-1 .overlay-text h2{
+
+    .overlay-1 .overlay-text h2 {
         font-size: 1.2rem;
         margin-bottom: 4px;
     }
-    .overlay-text p{
+
+    .overlay-text p {
         font-size: 0.5rem;
     }
+
     .overlay-2 {
         width: 145.91px;
         height: 74.09px;
         top: 10%;
         right: 2%;
     }
-    .overlay-2 .overlay-text h2{
+
+    .overlay-2 .overlay-text h2 {
         font-size: 1.87rem;
         margin-bottom: 2px;
+    }
+
+    .habit-cards{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .habit-title h2{
+        font-size: 2rem;
     }
 }
