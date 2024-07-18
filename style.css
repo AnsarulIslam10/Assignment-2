@@ -41,8 +41,10 @@ body {
 /* Shared Styles End */
 
 header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.089) 100%);
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.089) 100%); */
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(117, 117, 117, 0.226) 25%, rgba(255, 255, 255, 0.226) 50%, rgba(185, 184, 184, 0.192) 75%, black 100%);
 }
+
 main {
     width: 85%;
     margin: 0 auto;
@@ -213,7 +215,7 @@ main {
 .habit-cards {
     color: white;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .habit-card {
@@ -224,6 +226,7 @@ main {
 
 .habit-card img {
     border-radius: 50%;
+    margin-bottom: 30px;
 }
 
 .habit-card h3 {
@@ -238,6 +241,47 @@ main {
     font-size: 14px;
     font-weight: 400;
 }
+
+/* Run section styles */
+.run {
+    display: flex;
+    margin-top: 100px;
+    color: white;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.run-text {
+    width: 460px;
+    height: 290px;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+.run-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.run-text p {
+    margin-bottom: 34px;
+}
+
+.run-img img {
+    height: 312px;
+    border-radius: 18px;
+    width: 366px;
+    object-fit: cover;
+}
+
+
+
+
 
 
 /* Mobile Responsive Code */
@@ -299,11 +343,49 @@ main {
         margin-bottom: 2px;
     }
 
-    .habit-cards{
-        grid-template-columns: repeat(1,1fr);
+    .habit-cards {
+        grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+        gap: 40px;
     }
-    .habit-title h2{
+
+    .habit-title h2 {
         font-size: 2rem;
+    }
+
+    .run {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .run-text {
+        width: 287px;
+        height: 260px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .run-text h2 {
+        font-size: 2rem;
+    }
+    .run-text p{
+        font-size: 0.7rem;
+    }
+    .run-img img {
+        width: 287px;
+        height: 170px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .run-text button {
+        width: 295px;
+        height: 54px;
     }
 }
