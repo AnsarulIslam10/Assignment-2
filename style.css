@@ -25,6 +25,7 @@ body {
     width: 224px;
     height: 54px;
     border-radius: 42px;
+    border: none;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
     font-size: 1.12rem;
@@ -40,7 +41,7 @@ body {
 /* Shared Styles End */
 
 header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.089) 100%);
 }
 
 /* Navbar Styles */
