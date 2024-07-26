@@ -84,7 +84,7 @@ header {
 .hamburger {
     display: none;
     filter: invert();
-    height: 40px;
+    height: 20px;
 }
 
 /* Banner Styles */
@@ -331,6 +331,7 @@ header {
 
 table {
     width: 310px;
+    width: 150%;
     height: 216px;
     border-collapse: collapse;
 }
@@ -465,6 +466,88 @@ td {
 }
 
 
+/* footer section styling*/
+footer {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 86px;
+}
+
+.footer-container {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+    justify-items:flex-end;
+    align-content: space-between;
+    margin-bottom: 60px;
+}
+
+.footer-left h2 {
+    font-size: 4.375rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 0.875rem;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-middle h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-middle h4 {
+    font-size: 1.437rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-right h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-right h4 {
+    font-size: 1.437rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#footer-text {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    padding-bottom: 35px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 36px;
+}
+
+
+
 
 
 
@@ -593,12 +676,20 @@ td {
     }
 
     .bmi-text {
-        width: 380px;
+        width: 300px;
     }
 
     .bmi-chart h2 {
         font-size: 1rem;
         margin-bottom: 23px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        font-size: 0.8rem;
     }
 
     .bmi-calculator h2 {
@@ -615,4 +706,22 @@ td {
     .team-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+    }
+    .footer-left p{
+        margin-bottom: 10px;
+    }
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        margin: 0;
+    }
+
 }
