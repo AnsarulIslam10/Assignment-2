@@ -286,70 +286,85 @@ header {
 }
 
 /* Membership Section Styling */
-.membership{
+.membership {
     width: 85%;
     margin: 0 auto;
     margin-top: 80px;
     color: white;
 }
-.membership > h2{
+
+.membership>h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 80px;
 }
-.membership-cards{
+
+.membership-cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 56px;
 }
-.membership-card{
+
+.membership-card {
     border: 1px solid rgba(170, 169, 169, 0.397);
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-image: linear-gradient(180deg, #222222,rgba(35, 36, 35, 0.192));
+    background-image: linear-gradient(180deg, #222222, rgba(35, 36, 35, 0.192));
 }
-.membership-card h2{
+
+.membership-card h2 {
     margin-top: 36px;
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 20px;
 }
-#dollar{
+
+#dollar {
     font-size: 3rem;
     font-weight: 700;
 }
-.membership-card h3{
+
+.membership-card h3 {
     background: rgb(22, 22, 22);
     color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-bottom: 20px;
 }
-#mc-p-1, #mc-p-2, #mc-p-3{
+
+#mc-p-1,
+#mc-p-2,
+#mc-p-3 {
     font-size: 0.875rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid rgb(27, 26, 26);
     padding: 20px;
 }
-#mc-p-4{
+
+#mc-p-4 {
     font-size: 0.875rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     padding: 20px;
 }
-.membership .primary-btn{
+
+.membership .primary-btn {
     margin-bottom: 24px;
     cursor: pointer;
 }
-#membership-card-2 h3{
+
+#membership-card-2 h3 {
     background: #E6533C;
 }
-#membership-card-2{
+
+#membership-card-2 {
+    transform: scale(1.10, 1.10);
     border-image: linear-gradient(to right, rgb(58, 207, 213) 0%, rgb(62, 78, 213) 100%) 1;
 }
-.membership-card:hover{
-    transform: scale(1.10,1.10);
+
+.membership-card:hover {
+    transform: scale(1.10, 1.10);
 }
 
 
@@ -543,7 +558,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 50px;
-    justify-items:flex-end;
+    justify-items: flex-end;
     align-content: space-between;
     margin-bottom: 60px;
 }
@@ -609,12 +624,6 @@ footer {
     border-top: 2px solid rgba(255, 255, 255, 0.1);
     padding-top: 36px;
 }
-
-
-
-
-
-
 
 
 
@@ -728,9 +737,14 @@ footer {
         padding: 16px 40px 16px 40px;
     }
 
-    .membership-cards{
+    .membership-cards {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    #membership-card-2 {
+        transform: scale(1, 1);
+    }
+
     .bmi-items {
         flex-direction: column;
         padding: 5px;
@@ -778,9 +792,11 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         justify-items: start;
     }
-    .footer-left p{
+
+    .footer-left p {
         margin-bottom: 10px;
     }
+
     .footer-left,
     .footer-middle,
     .footer-right {
