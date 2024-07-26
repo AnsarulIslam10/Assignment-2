@@ -285,6 +285,74 @@ header {
     object-fit: cover;
 }
 
+/* Membership Section Styling */
+.membership{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: white;
+}
+.membership > h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.membership-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 56px;
+}
+.membership-card{
+    border: 1px solid rgba(170, 169, 169, 0.397);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(180deg, #222222,rgba(35, 36, 35, 0.192));
+}
+.membership-card h2{
+    margin-top: 36px;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#dollar{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.membership-card h3{
+    background: rgb(22, 22, 22);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#mc-p-1, #mc-p-2, #mc-p-3{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(27, 26, 26);
+    padding: 20px;
+}
+#mc-p-4{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+.membership .primary-btn{
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+#membership-card-2 h3{
+    background: #E6533C;
+}
+#membership-card-2{
+    border-image: linear-gradient(to right, rgb(58, 207, 213) 0%, rgb(62, 78, 213) 100%) 1;
+}
+.membership-card:hover{
+    transform: scale(1.10,1.10);
+}
+
+
 /* BMI section styling */
 .bmi-container {
     background: rgb(34, 34, 34);
@@ -660,6 +728,9 @@ footer {
         padding: 16px 40px 16px 40px;
     }
 
+    .membership-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .bmi-items {
         flex-direction: column;
         padding: 5px;
