@@ -320,18 +320,14 @@ header {
     color: white;
 }
 
-.bmi-chart {
-    color: white;
-}
-
 .bmi-chart h2 {
     font-size: 1.75rem;
+    width: 310px;
     margin-bottom: 52px;
 }
 
 table {
-    width: 310px;
-    width: 150%;
+    width: 100%;
     height: 216px;
     border-collapse: collapse;
 }
