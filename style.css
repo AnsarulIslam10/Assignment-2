@@ -474,7 +474,9 @@ td {
     margin-bottom: 30px;
     border: none;
 }
-
+.row-2 select, .row-3 select{
+    Border-right: 20px solid transparent;
+}
 ::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
