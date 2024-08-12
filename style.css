@@ -41,7 +41,7 @@ body {
 /* Shared Styles End */
 
 header {
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(117, 117, 117, 0.226) 25%, rgba(255, 255, 255, 0.226) 50%, rgba(185, 184, 184, 0.192) 75%, black 100%);
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(117, 117, 117, 0.226) 25%, rgba(255, 255, 255, 0.171) 50%, rgba(185, 184, 184, 0.192) 75%, black 100%);
 }
 
 /* Navbar Styles */
@@ -73,6 +73,7 @@ header {
     border-radius: 39px;
     font-size: 1.12rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 #home {
@@ -474,9 +475,12 @@ td {
     margin-bottom: 30px;
     border: none;
 }
-.row-2 select, .row-3 select{
+
+.row-2 select,
+.row-3 select {
     Border-right: 20px solid transparent;
 }
+
 ::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
